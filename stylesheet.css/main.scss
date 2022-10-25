@@ -1,0 +1,169 @@
+$color-bg: #F0F0F0;
+$color-bg-primary: #E7ECFF;
+$color-bg-secondary: #FFFFFF;
+
+$color-gray-9: #141719;
+$color-gray-8: #393E41;
+$color-gray-7: #454E54;
+$color-gray-6: #5D6970;
+$color-gray-5: #76848C;
+$color-gray-4: #939EA4;
+$color-gray-3: #B0B8BC;
+$color-gray-2: #CDD1D4;
+$color-gray-1: #E9EBEC;
+
+$color-blue-9: #091133;
+$color-blue-8: #111B47;
+$color-blue-7: #222F65;
+$color-blue-6: #37447E;
+$color-blue-5: #505F98;
+$color-blue-4: #6F7CB2;
+$color-blue-3: #929ECC;
+$color-blue-2: #BAC3E5;
+$color-blue-1: #E7ECFF;
+
+$font-sm-1: 12px;
+$font-sm-2: 14px;
+$font-sm-3: 16px;
+$font-md-1: 18px;
+$font-md-2: 26px;
+$font-lg-1: 36px;
+$font-lg-2: 50px;
+
+body {
+    margin-right: 5rem;
+    margin-left: 5rem;
+    background-image: url(./images/designer_1.png);
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+}
+
+@mixin linkStyles {
+    color: $color-blue-5;
+    font-size: $font-sm-2;
+    font-weight: 400;
+} 
+
+@mixin brandStyles {
+    color: $color-blue-6;
+    font-size: $font-md-2;
+    font-weight: 900; 
+}
+
+@mixin buttonStyles{
+    color: $color-bg-secondary;
+    background-color: $color-blue-8;
+    font-size: $font-sm-1;
+    border: 0px;
+    width: 160px;
+    border-radius: 2px;
+}
+
+@mixin headerStyles {
+    font-size: $font-lg-2;
+    color: $color-blue-9;
+    font-weight: 500;
+    margin-top: 260px
+}
+
+@mixin paragStyles {
+    font-size: $font-sm-3;
+    color: $color-blue-5;
+    font-weight: 500px;
+    margin-top: 20px;
+    margin-bottom: 74px;
+}
+
+@mixin btnStyles {
+    width: 160px;
+    font-size: $font-sm-3;
+    height: 36px;
+    border-radius: 2px;
+}
+
+.head {
+    .head-link {
+            @include linkStyles;
+    }
+
+    .brand {
+        @include brandStyles;
+    }
+
+    .head-button {
+        @include buttonStyles;
+    }
+
+    h1 {
+        @include headerStyles;
+    }
+
+    p {
+        @include paragStyles;
+    }
+
+    .purchase {
+        @include btnStyles;
+        color: $color-bg-secondary;
+        background-color: $color-blue-8;
+        border: 0px;
+    }
+
+    .learn {
+        @include btnStyles;
+        color: $color-blue-9;
+        background-color: $color-blue-1;
+        margin-left: 30px;
+    }
+
+    .head2 {
+        margin-bottom: 546px;
+    }
+}
+
+// Media for header
+
+@media screen and (max-width: 960px) {
+    body {
+        margin-right: 3rem;
+        margin-left: 3rem;
+        background-image: url(./images/designer_1.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .head {
+        .head1 {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .head2 {
+            width: 100%;
+            font-size: $font-md-2;
+        }
+    
+        .purchase {
+            width: 40%;
+        }
+    
+        .learn {
+            width: 40%;
+        }
+    
+        .head2 {
+            margin-bottom: 50px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 560px) {
+    body {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+}
