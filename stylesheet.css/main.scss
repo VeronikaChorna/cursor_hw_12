@@ -31,11 +31,19 @@ $font-lg-1: 36px;
 $font-lg-2: 50px;
 
 body {
-    margin-right: 5rem;
-    margin-left: 5rem;
     background-image: url(./images/designer_1.png);
     background-repeat: no-repeat;
     background-position-x: 100%;
+}
+
+.head {
+    margin-right: 5rem;
+    margin-left: 5rem;
+}
+
+.main-content {
+    margin-right: 5rem;
+    margin-left: 5rem;
 }
 
 @mixin linkStyles {
@@ -81,9 +89,21 @@ body {
     border-radius: 2px;
 }
 
+@mixin mainHeading{
+    font-size: $font-lg-1;
+    color: $color-blue-9;
+    font-weight: 500;
+}
+
+@mixin mainParagraph {
+    font-size: $font-sm-3;
+    color: $color-blue-4;
+    font-weight: 400;
+}
+
 .head {
     .head-link {
-            @include linkStyles;
+        @include linkStyles;
     }
 
     .brand {
@@ -116,8 +136,12 @@ body {
         margin-left: 30px;
     }
 
+    .head1 {
+        margin-top: 10px;
+    }
+
     .head2 {
-        margin-bottom: 546px;
+        margin-bottom: 250px;
     }
 }
 
@@ -125,11 +149,19 @@ body {
 
 @media screen and (max-width: 960px) {
     body {
-        margin-right: 3rem;
-        margin-left: 3rem;
         background-image: url(./images/designer_1.png);
         background-repeat: no-repeat;
         background-size: 100%;
+    }
+
+    .head {
+        margin-right: 3rem;
+        margin-left: 3rem;
+    }
+    
+    .main-content {
+        margin-right: 3rem;
+        margin-left: 3rem;
     }
 
     .head {
@@ -162,8 +194,78 @@ body {
 }
 
 @media screen and (max-width: 560px) {
-    body {
+    .head {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    
+    .main-content {
         margin-right: 1rem;
         margin-left: 1rem;
     }
 }
+
+// Main content
+
+.main-content {
+    h3 {
+        @include mainHeading;
+    }
+
+    p {
+        @include mainParagraph;
+    }
+
+    h4 {
+        color: $color-blue-9;
+        font-weight: 500;
+        font-size: $font-sm-3;
+        margin-top: 15px;
+    }
+
+    .p-inside {
+        font-size: $font-sm-1;
+        font-weight: 400;
+        color: $color-gray-6;
+    }
+
+    button {
+        @include buttonStyles;
+    }
+
+    .container {
+        margin-top: 200px;
+    }
+
+    .container-sm {
+        margin-top: 80px;
+    }
+
+    .p1 {
+        width: 60%;
+    }
+
+    .p2 {
+        font-size: $font-lg-2;
+        font-weight: 500;
+        color: $color-blue-7;
+        margin-top: 35px;
+        margin-bottom: 0px;
+    }
+
+    .p3 {
+        font-size: $font-sm-3;
+        font-weight: 400;
+        color: $color-blue-6;
+        margin-top: 0px;
+    }
+
+    .p4 {
+        font-size: $font-sm-2;
+        font-weight: 400;
+        color: $color-gray-6;
+        margin-top: 60px;
+    }
+
+}
+

@@ -1,9 +1,17 @@
 body {
-  margin-right: 5rem;
-  margin-left: 5rem;
   background-image: url(./images/designer_1.png);
   background-repeat: no-repeat;
   background-position-x: 100%;
+}
+
+.head {
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
+
+.main-content {
+  margin-right: 5rem;
+  margin-left: 5rem;
 }
 
 .head .head-link {
@@ -55,17 +63,26 @@ body {
   background-color: #E7ECFF;
   margin-left: 30px;
 }
+.head .head1 {
+  margin-top: 10px;
+}
 .head .head2 {
-  margin-bottom: 546px;
+  margin-bottom: 250px;
 }
 
 @media screen and (max-width: 960px) {
   body {
-    margin-right: 3rem;
-    margin-left: 3rem;
     background-image: url(./images/designer_1.png);
     background-repeat: no-repeat;
     background-size: 100%;
+  }
+  .head {
+    margin-right: 3rem;
+    margin-left: 3rem;
+  }
+  .main-content {
+    margin-right: 3rem;
+    margin-left: 3rem;
   }
   .head .head1 {
     width: 100%;
@@ -89,8 +106,69 @@ body {
   }
 }
 @media screen and (max-width: 560px) {
-  body {
+  .head {
     margin-right: 1rem;
     margin-left: 1rem;
   }
+  .main-content {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+}
+.main-content h3 {
+  font-size: 36px;
+  color: #091133;
+  font-weight: 500;
+}
+.main-content p {
+  font-size: 16px;
+  color: #6F7CB2;
+  font-weight: 400;
+}
+.main-content h4 {
+  color: #091133;
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 15px;
+}
+.main-content .p-inside {
+  font-size: 12px;
+  font-weight: 400;
+  color: #5D6970;
+}
+.main-content button {
+  color: #FFFFFF;
+  background-color: #111B47;
+  font-size: 12px;
+  border: 0px;
+  width: 160px;
+  border-radius: 2px;
+}
+.main-content .container {
+  margin-top: 200px;
+}
+.main-content .container-sm {
+  margin-top: 80px;
+}
+.main-content .p1 {
+  width: 60%;
+}
+.main-content .p2 {
+  font-size: 50px;
+  font-weight: 500;
+  color: #222F65;
+  margin-top: 35px;
+  margin-bottom: 0px;
+}
+.main-content .p3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #37447E;
+  margin-top: 0px;
+}
+.main-content .p4 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #5D6970;
+  margin-top: 60px;
 }/*# sourceMappingURL=main.css.map */
