@@ -263,4 +263,16 @@ body {
   .footer1 .p1 {
     width: 100%;
   }
+  .footer2 .foot1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .footer2 .foot-ref {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
 }/*# sourceMappingURL=main.css.map */
