@@ -241,6 +241,28 @@ body {
         margin-top: 80px;
     }
 
+}
+
+
+// Footer
+
+.footer {
+    background-image: url(./images/bg-img.png);
+    background-size: cover;
+    
+    .container {
+        margin-top: 100px;
+    }
+
+    h3 {
+        @include mainHeading;
+        margin-top: 200px;
+    }
+
+    p {
+        @include mainParagraph;
+    }
+
     .p1 {
         width: 60%;
     }
@@ -267,5 +289,47 @@ body {
         margin-top: 60px;
     }
 
+    button {
+        @include buttonStyles;
+    }
 }
+
+@media screen and (max-width: 960px) {
+    .main-content {
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .column {
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .build {
+            width: 10%;
+        }
+
+        h3 {
+            margin-top: 50px;
+        }
+    }
+
+    .footer {
+        .container {
+            margin-top: 50px;
+        }
+
+        .p1 {
+            width: 100%;
+        } 
+    }
+}
+
+
+
+
 
