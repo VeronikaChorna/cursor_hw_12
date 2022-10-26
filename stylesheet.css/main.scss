@@ -246,11 +246,12 @@ body {
 
 // Footer
 
-.footer {
+.footer1 {
     background-image: url(./images/bg-img.png);
     background-size: cover;
+    padding-bottom: 100px;
     
-    .container {
+    .footer-first {
         margin-top: 100px;
     }
 
@@ -294,6 +295,46 @@ body {
     }
 }
 
+
+.footer2 {
+    background-color: $color-blue-1;
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+    hr {
+        margin-right: 5rem;
+        margin-left: 5rem;
+    }
+
+    .foot-link {
+        @include linkStyles;
+    }
+
+    .foot-ref {
+        color: $color-gray-4;
+        font-size: $font-sm-2;
+        font-weight: 500;
+    }
+
+    .brand {
+        @include brandStyles;
+    }
+
+    .foot-button {
+        @include buttonStyles;
+        width: 100px;
+    }
+
+    .foot1 {
+        margin-top: 10px;
+    }
+
+    .head2 {
+        margin-bottom: 250px;
+    }
+}
+
+
 @media screen and (max-width: 960px) {
     .main-content {
 
@@ -318,7 +359,7 @@ body {
         }
     }
 
-    .footer {
+    .footer1 {
         .container {
             margin-top: 50px;
         }
